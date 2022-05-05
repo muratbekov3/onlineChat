@@ -12,7 +12,9 @@ const MessageForm = (props) => {
 
         const text = value.trim()
 
-        if(text.length > 0) sendMessage(creds, chatId, {text})
+        if(text.length > 0){ 
+            sendMessage(creds, chatId, {text})
+        }
 
         setValue('')
 
@@ -25,7 +27,7 @@ const MessageForm = (props) => {
     }
 
     const handleUpload = (event) => {
-        sendMessage(creds, chatId, {file: event.target.value, text: ''})
+        sendMessage(creds, chatId, {files: event.target.files, text: ''})
     }
 
     return (

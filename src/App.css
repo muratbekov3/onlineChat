@@ -287,3 +287,8 @@
     opacity: 1;
     right: 0;
   }
+  .error {
+    color: red;
+    text-align: center;
+
+  }

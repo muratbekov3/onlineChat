@@ -40,7 +40,6 @@ const ChatFeed = (props) => {
               marginLeft: isMyMessage ? "0px" : "68px",
             }}
           >
-            read reciptes
             {renderReadReceipts(message, isMyMessage)}
           </div>
         </div>
